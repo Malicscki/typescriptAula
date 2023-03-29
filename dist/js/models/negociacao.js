@@ -1,20 +1,11 @@
 export class Negociacao {
-    constructor(_data, _quantidade, _valor) {
-        this._data = _data;
-        this._quantidade = _quantidade;
-        this._valor = _valor;
-    }
-    get data() {
-        return this._data;
-    }
-    get quantidade() {
-        return this._quantidade;
-    }
-    get valor() {
-        return this._valor;
+    constructor(data, quantidade, valor) {
+        this.data = data;
+        this.quantidade = quantidade;
+        this.valor = valor;
     }
     get volume() {
-        return this._quantidade * this._valor;
+        return this.quantidade * this.valor;
     }
 }
 /* CODIGO ANTIGO ERA ASSIM - FOI ATUALIZADO PARA UM FORMATO MENOS VERBOSO
@@ -27,4 +18,18 @@ export class Negociacao {
         this._data = data;
         this._quantidade = quantidade;
         this._valor = valor;
-    }*/ 
+    }
+        
+    get data(): Date{
+        return this._data;
+    }
+
+    get quantidade(): number{
+        return this._quantidade;
+    }
+
+    get valor(): number{
+        return this._valor;
+    }
+    
+    */ 
