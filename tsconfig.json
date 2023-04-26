@@ -1,13 +1,9 @@
 {
     "compilerOptions": {
-        "outDir": "dist/js", // local onde os arquivos compilados serao gerados
-        "target": "ES6", // ecma script 6
-        "noEmitOnError": true,  // somente gerar se nao houver erros
-        "noImplicitAny": true //dizer para o TypeScript para ele não adotar o tipo any implicitamente, só se você por algum motivo do seu código você quiser que aquele campo seja any, por algum motivo de compatibilidade, ou seja o que for.
+        "outDir": "dist/js",
+        "target": "ES6",
+        "noEmitOnError": true,
+        "noImplicitAny": true
     },
-    "include": ["app/**/*"] // é onde todos os arquivos que serao compilados estao
+    "include": ["app/**/*"]
 }
-
-
-
-
